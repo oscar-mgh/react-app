@@ -1,5 +1,5 @@
 .bg-dark {
-    background-color: rgb(23, 26, 31);
+    background-color: #1C232B;
 }
 
 .text-white {
@@ -11,14 +11,19 @@
 }
 
 .custom-image {
+    border-radius: 7%;
     display: block;
-    width: 95%;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 19px;
+    width: 92%;
+    margin: 3.5% auto;
 }
 
 .white-buttons button, .white-buttons div {
     color: white;
     border-color: white;
+}
+
+.shopping-cart {
+    position: fixed;
+    right: 10px;
+    top: 0;
 }

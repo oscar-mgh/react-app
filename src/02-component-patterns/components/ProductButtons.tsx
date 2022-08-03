@@ -8,7 +8,9 @@ export interface Props {
 }
 
 export const ProductButtons = ({ className, style }: Props ) => {
+
 	const { counter, increaseBy } = useContext(ProductContext);
+
 	return (
 		<div
 			style={ style } 
@@ -17,7 +19,7 @@ export const ProductButtons = ({ className, style }: Props ) => {
 			<button onClick={() => increaseBy(-1)} className={styles.buttonMinus}>
 				-
 			</button>
-			<div className={styles.countLabel}>{counter}</div>
+			<div className={styles.countLabel}> { counter } </div>
 			<button onClick={() => increaseBy(+1)} className={styles.buttonAdd}>
 				+
 			</button>
